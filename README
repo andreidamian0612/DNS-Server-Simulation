@@ -1,0 +1,27 @@
+Damian Andrei Nicolae 312CB
+-hash_function -- returneaza suma caracterelor %M
+-definesc tipul de structura celula2(lista dublu inlantuita)
+-definesc tipul de celula TEntry(cu Key Value si Frequency)
+-functia SortList -- sortez lista cu Bubble sort si sterg un element daca apare de 2 ori
+        (am intampinat probleme la inserare si am reusit sa il fac sa mearga asa,stiu ca e ineficient)
+-functia initLDI - initializez o lista(cu santinela),urmand ca priumul element inserat sa ia locul santinelei
+-functia InsLista - insereaza in lista elementul,avand cazul special in care se inlocuieste info din santinela
+        daca lista e formata doar din santinela
+-functia AfisLista --afiseaza primul element din lista si apoi restul elementelor
+-definesc structura hash-mapului
+-functia remove --caz1 - in care lista e format dintr-un singur element(cel cerut),se scrie NULL peste info
+                --caz2 - in care se elimina primul element din lista
+                --caz3 - pentru restul elementelor din lista .
+-functia alocaHashMap - initializez pe fiecare pozitie din hash o lista(folosind initLDI)
+-functia print - afiseaza numarul bucketului si lista,daca aceasta nu este nula(daca e nula nu afiseaza nimic)
+-funcita print_lsit - afiseaza lista cu nr primit ca parametru,daca ea este vida atunci afiseaza "VIDA"
+-functia set - insereaza in lista elementul(chiar daca acesta exista,urmand sa fie sters de sortare)
+             - daca lungimea listei e egala cu M,sterg ultimul element si apoi inserez
+             -sorteaza lista(si implicit sterge elementul daca el exista deja in lista inainte sa fie inserat)
+-functia get -  caz1 - pt primul element - se creste Frequency , se sorteaza lista si returneaza value
+               -caz2 - se parcurge lista pana se gaseste elementul cerut,se creste Frequency,
+                        se sorteaza lista si se returneaza value
+main - aloca memorie pentru parametrii
+     - citesc comenzile din fisier cu fscanf
+     - pentru fiecare comanda se apeleaza functia respectiva
+     - redirectez outputul in fisier cu freopen
